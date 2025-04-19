@@ -14,7 +14,7 @@ export default function Home() {
   const [selectedType, setSelectedType] = useState<number | null>(null);
   const [qrCodes, setQrCodes] = useState<QRCodeData[]>([]);
   const [quantity, setQuantity] = useState<number>(10);
-  const [baseUrl, setBaseUrl] = useState<string>('https://example.com/verify?id=');
+  const [baseUrl] = useState<string>('https://example.com/verify?id=');
   const [lineId, setLineId] = useState<string>('@lineid');
   
   const generateQRCodesType1 = async () => {
